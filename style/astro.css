@@ -1,0 +1,196 @@
+/*astro.css*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*resetting all box models*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    object-fit: cover;
+
+}
+
+span{
+  font-weight: bold;
+}
+
+.container h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+}
+
+.content a{   
+    color: #111;
+    font-size: 15px;
+    padding: 1px;
+    margin: 2px;
+    font-weight: bold;
+    background-color: rgb(235, 205, 38);
+    border-radius: 5px;
+}
+
+.content a:hover{
+    border-radius: 5px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(255, 102, 0);
+  }
+
+header{
+    width: 100%;
+}
+#primary-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 2px 100px;
+    width: 100%;
+    align-items: center;  
+    text-align: center;
+    background-color: black;
+    z-index: 2;
+  }
+
+  .agency-name, .logo{
+    max-height: 55px;
+    max-width: 55px;
+  }
+  .agency-name{
+    max-width: 65px;
+  }
+
+  /*toggle button open menu*/
+  .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../img/openWhite.jpg); /*here goes the open hamburger menu*/
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+    filter: invert(1);
+}
+/*toggle button close menu*/
+.toggle.active{
+    background: url(../img/1.png); /*close hamburger menu*/
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+}
+
+header a{ /*all anchors*/
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px;
+  }
+  header a:hover{
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+  }
+/*styling the contents in the container*/
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background:  #fff;
+    margin: 100px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 700px;
+}
+.container .card .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 50px;
+    transition-delay: 0.3s;
+}
+/*media queries*/
+@media screen and (max-width: 1024px){
+    .agency-name, .logo{
+      max-height: 55px;
+      max-width: 55px;
+    }
+    .agency-name{
+      max-width: 65px;
+    }
+    .toggle{
+      display: inline-block;
+    }
+    #primary-nav{
+      display: none;
+    }
+    #primary-nav.active{
+      display: block;
+      background-color: rgb(0, 0, 0);
+      opacity: 1;
+      padding: 0;
+      
+      
+    }
+    #primary-nav.active a{
+      display: block;
+    }
+  }

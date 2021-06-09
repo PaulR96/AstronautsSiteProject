@@ -1,0 +1,185 @@
+/*gallery.css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*Resetting all the box models*/
+*{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+	background-color: #1a1a1a;
+}
+
+/*toggle button open menu*/
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../img/openWhite.jpg); /* open hamburgher menu*/
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+/*toggle button close menu*/
+.toggle.active{
+    background: url(../img/1.png); /* close hamburgher menu*/
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+	filter:invert(1);
+}
+.agency-name, .logo{
+	max-height: 55px;
+	max-width: 55px;
+}
+.agency-name{
+	max-width: 65px;
+}
+#primary-nav{
+	position: absolute;
+	top: 0;
+    left: 0;
+    display: flex;
+    padding: 2px 100px;
+	width: 100%;
+	align-items: center;
+    justify-content: space-between;
+	text-align: center;
+	background-color: black;
+    z-index: 1;
+}
+a{ /*all anchors*/
+	text-decoration:none;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	margin: 20px;
+}
+a:hover{
+	border-radius: 10px;
+	color: black;
+	background-color: rgb(255, 255, 255);
+}
+/*The background of the entire site*/
+#hero{
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*The container of the pictures in preview and of the arrows #prev,#next*/
+.slider{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: calc(50% - 260px); /* 460px is the length of the slider. This rule will center the slider*/
+	bottom: 50px;
+}
+/*Arrows to change the image #hero*/
+#prev, #next{
+	width: 50px;
+	padding: 8px;
+	border-radius: 20px;
+	cursor: pointer;
+	filter:invert(1);
+}
+/*Container of the pictures*/
+.preview{
+	display: flex;
+	margin: 0 10px;
+}
+/*Pictures in the preview*/
+.preview .pictures{
+	display: inline-block;
+	height: 40px;
+	width: 60px;
+	margin: 0 10px;
+	background-size: cover;
+	cursor: pointer;
+}
+/*Pictures in the preview selected*/
+.preview .active{
+	height: 55px;
+	width: 80px;
+	border: 2px solid #808080;
+}
+/*Pictures in the preview not selected*/
+.preview div:not(.active){
+	opacity: 0.8;
+}
+/*--Media-Queries--*/
+@media screen and (max-width: 1400px){
+	.agency-name, .logo{
+		max-height: 35px;
+		max-width: 40px;
+	}
+	.agency-name{
+		max-width: 45px;
+	}
+}
+@media screen and (max-width: 1300px){
+	#primary-nav{
+		padding: 2px 10px;
+	}
+	#primary-nav a{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.agency-name, .logo{
+		max-height: 55px;
+		max-width: 55px;
+	}
+	.agency-name{
+		max-width: 65px;
+	}
+	.toggle{
+		display: inline-block;
+	}
+	#primary-nav{
+		display: none;
+	}
+	#primary-nav.active{
+		display: block;
+		background-color: black;
+		opacity: 1;
+	}
+	#primary-nav.active a{
+		display: block;
+	}
+}
+@media screen and (min-width: 576px) and (max-width: 1024px){
+	#hero{
+		background-size: contain;
+	}
+	.slider{
+		bottom: 20%;
+	}
+}
+@media screen and (max-width: 575px){
+	#hero{
+		background-size: contain;
+	}
+	.preview, .slider{
+		display: block;
+	}
+	.slider{
+		right: 10px;
+		bottom: calc(30% - 162px);
+	}
+	.slider .preview .pictures{
+		margin: 10px;
+	}
+	#next, #prev{
+		position: relative;
+		left: 30px;
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+}

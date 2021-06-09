@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="style/news-page.css">
+	<title>News Page</title>
+</head>
+
+<body>
+	<header>
+		<div class="toggle"></div>
+		<nav id="primary-nav"><!--navigation bar to access other pages-->
+			<img src="img/logo-for-site.png" class="logo">
+			<img src="img/APE - X.png" class="agency-name">
+			<a href="index.html">Homepage</a>
+			<a href="news-page.html" style="text-decoration: underline;">News Page</a>
+			<a href="join-us.html">Join Us</a>
+			<a href="astronauts.html">Astronauts</a>
+			<a href="missions.html">Missions</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="about.html">About Us</a>
+		</nav>
+		<nav id="secondary-nav">
+			<!--It will become fixed while scrolling-->
+			<a href="#most-relevant" id="most-relevant-anchor">Most Relevant</a>
+			<a href="#new-discovery" id="new-discovery-anchor">New Discovery</a>
+			<a href="#space-teams" id="space-teams-anchor">Space Teams</a>
+			<a href="#latest-news" id="latest-news-anchor">Latest News</a>
+		</nav>
+	</header>
+	<div id="sections-container"><!--main container-->
+		<a name="most-relevant"></a>
+		<section id="most-relevant">
+			<p class="section-title">Most Relevant</p>
+			<div class="news-container">
+				<p class="news-title">Pioneer Z</p>
+				<p class="news-date-release">15/02/1960</p>
+				<p class="news-description">Pioneer it was a probe exactly the same as its predecessor (Pioneer P-30),
+					whose task was to study the environment between the Earth and the Moon. The vehicle exploded 70
+					seconds after launch due to the rocket's first stage malfunction.</p>
+			</div>
+		</section>
+		<a name="new-discovery"></a>
+		<section id="new-discovery">
+			<p class="section-title">New Discovery</p>
+			<div class="news-container">
+				<p class="news-title">Chang’e-4</p>
+				<p class="news-date-release">03/01/2019</p>
+				<p class="news-description">On January 3, the Chang e-4 probe, launched by the Chinese space agency
+					CNSA, reached the hidden side of our satellite, the one we are unable to observe from Earth. A moon
+					landing that gave us in 2019 the first images of the lunar surface
+					from the side hidden from our view.</p>
+			</div>
+			<div class="news-container">
+				<p class="news-title">Chinese rover</p>
+				<p class="news-date-release">26/04/2021</p>
+				<p class="news-description">China has chosen the name of the rover that is coming to Mars, and it is a
+					god of fire</p>
+			</div>
+		</section>
+		<a name="space-teams"></a>
+		<section id="space-teams">
+			<p class="section-title">Space Teams</p>
+			<div class="news-container">
+				<p class="news-title">Artemis</p>
+				<p class="news-date-release">2024</p>
+				<p class="news-description">The team consists of 18 people with different backgrounds, skills and
+					experiences, who will help NASA prepare the Artemis venture missions, the preparations for which are
+					already underway.</p>
+			</div>
+			<div class="news-container">
+				<p class="news-title">ESA</p>
+				<p class="news-date-release">1978</p>
+				<p class="news-description">With the selection of the first astronauts in 1978 and the first Spacelab
+					mission in 1983, the European Space Agency took the first steps towards inhabited space flight. The
+					need for a second selection of astronauts became necessary in
+					1992 with the conception of the Columbus orbiting laboratory project.</p>
+			</div>
+		</section>
+	</div>
+	<div id="latest-news"><!--aside bar-->
+		<a name="latest-news"></a>
+		<p class="section-title">Latest News</p>
+		<div class="news-container">
+			<p class="news-title">Discoverer 1</p>
+			<p class="news-date-release">28/02/1959</p>
+			<p class="news-description">First satellite in polar orbit</p>
+		</div>
+		<div class="news-container">
+			<p class="news-title">GRAB-1</p>
+			<p class="news-date-release">5/07/1960</p>
+			<p class="news-description">First reconnaissance satellite</p>
+		</div>
+		<div class="news-container">
+			<p class="news-title">Sputnik 5</p>
+			<p class="news-date-release">19/08/1960</p>
+			<p class="news-description">First plants and animals returned alive from a terrestrial orbit</p>
+		</div>
+		<div class="news-container">
+			<p class="news-title">Vanguard 2</p>
+			<p class="news-date-release">17/02/1959</p>
+			<p class="news-description">First meteorological satellite</p>
+		</div>
+	</div>
+	<!-- end of the body -->
+	<script src="js/news-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fullscreen Video Background - HTML & CSS</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="showcase">
+        <!--this section contains the elements we actually see-->
+        <header>
+            <!--this header contains logo, company name and toggle button-->
+            <img id="logo" src="img/logo-for-site.png" alt="">
+            <img id="text" src="img/APE - X.png" alt="">
+            <div class="toggle"></div>
+        </header>
+
+        <video src="video/nebula7.mp4" muted loop autoplay></video>
+        <!--this contains the background video-->
+
+        <div class="overlay"></div>
+        <!--this is an overlay which changes the color of the video-->
+
+        <div class="text">
+            <!--Here we have the text shown in the homepage-->
+            <h2>stars</h2>
+            <h3>will never be won by little minds</h3>
+            <h3>we must be big as space itself</h3>
+            <a href="news-page.html">Explore</a>
+        </div>
+
+        <ul class="social">
+            <!--it contains the social links-->
+            <li>
+                <a href="#"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu"><!--this is the menu outside of the section-->
+        <ul>
+            <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+            <li><a href="news-page.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="astronauts.html">Astronauts</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join-us.html">Join Us</a></li>
+        </ul>
+    </div>
+    <!-- end of the body -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+/*about.css*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*Resetting all the box models*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url(../img/cosmo.jpg) no-repeat left;
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    max-height: 100%;
+    
+}
+
+#primary-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    padding: 2px 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .agency-name, .logo{
+    max-height: 55px;
+    max-width: 55px;
+  }
+  .agency-name{
+    max-width: 65px;
+  }
+
+/*toggle button open menu*/
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../img/openWhite.jpg); /* open hamburgher menu*/
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+    filter: invert(1);
+
+}
+/*toggle button close menu*/
+.toggle.active{
+    background: url(../img/1.png); /* close hamburgher menu*/
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+}
+
+header a{ /*all anchors*/
+  text-decoration:none;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+}
+header a:hover{
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.inner-container{
+    width: 45%;
+    float: right;
+    margin-right: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 100px;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-family: 'Zen Dots', cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #000000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.social{
+    position: flex;
+    bottom: 90px;   
+    display: flex;
+}
+
+.social li{
+    list-style: none;
+}
+/*social links*/
+.social li a{
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5;
+}
+
+.fa.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .fa-facebook-official {
+    color: #3b5998;
+    background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+    background-size: 55%;
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+  }
+
+/*those links will slide up when hovered*/
+.social li a:hover{
+    transform: scale(0.5) translateY(-15px);
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+/*--Media-Queries--*/
+@media screen and (max-width: 1024px){
+    .agency-name, .logo{
+      max-height: 55px;
+      max-width: 55px;
+    }
+    .agency-name{
+      max-width: 65px;
+    }
+    .toggle{
+      display: inline-block;
+    }
+    #primary-nav{
+      display: none;
+    }
+    #primary-nav.active{
+      display: block;
+      background-color: black;
+      opacity: 1;
+      height: 500px;
+    }
+    #primary-nav.active a{
+      display: block;
+    }
+  }
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}

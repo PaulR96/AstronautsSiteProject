@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive join us page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/join-us.css">
+</head>
+
+<body>
+    <section class="contact">
+        <header>
+            <nav id="primary-nav">
+                <img src="img/logo-for-site.png" class="logo">
+                <img src="img/APE - X.png" class="agency-name">
+                <a href="index.html">Homepage</a>
+                <a href="news-page.html">Newspage</a>
+                <a href="join-us.html" style="text-decoration: underline;">Join Us</a>
+                <a href="astronauts.html">Astronauts</a>
+                <a href="missions.html">Missions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            <div class="toggle"></div>
+        </header>
+        <div class="container">
+            <img src="img/logo-for-site.png" class="logo">
+            <img src="img/APE - X.png" class="agency-name">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Company address</h3>
+                        <p>via Roma 31,<br>Torino 10135,Piemonte</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Office number</h3>
+                        <p>3291394692</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>ape-x@info.org</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="" method="get">
+                    <div class="inputBox">
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" name="firstName" id="firstName" required><br><br>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="middleName">Middle Name (optional):</label><br>
+                        <input type="text" name="middleName" id="middleName"><br><br>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" name="lastName" id="lastName" required><br><br>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="mission">Desired mission:</label><br>
+                        <textarea rows="1" cols="18" name="mission" id="mission" required></textarea><br><br>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="age">Age:</label><br>
+                        <input type="number" name="age" id="age" min="18" max="60" step="1" required><br><br>
+                    </div>
+
+                    <div class="genderBox">
+                        <label for="gender">Gender:</label><br>
+                        <br>
+                        <div>
+                            <input type="radio" name="gender" id="male" value="man">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="female" value="woman" checked="checked">
+                            <label for="female">Female</label><br><br>
+                        </div>
+
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="hairColor">Hair Color:</label><br>
+                        <select name="hairColor" id="hairColor" required>
+                            <option value="brown">brown</option>
+                            <option value="blonde">green</option>
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                        </select><br><br>
+                    </div>
+
+                    <!--a drop down list with the eyes' colors-->
+                    <div class="inputBox">
+                        <label for="eyeColor">Eye Color:</label><br>
+                        <select name="eyeColor" id="eyeColor" required>
+                            <option value="brown">brown</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                        </select><br><br>
+                    </div>
+
+                    <!--field for an email address-->
+                    <div class="inputBox">
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" required><br><br>
+                    </div>
+
+                    <!--field for a phone number-->
+                    <div class="inputBox">
+                        <label for="phoneNumbers">Phone Numbers:</label><br>
+                        <textarea rows="1" cols="18" name="phoneNumbers" id="phoneNumbers" required></textarea><br><br>
+                    </div>
+
+                    <!--field for the address-->
+                    <div class="inputBox">
+                        <label for="address">Address:</label><br>
+                        <textarea rows="1" cols="18" name="address" id="address" required></textarea><br><br>
+                    </div>
+
+                    <!--field for the weight-->
+                    <div class="inputBox">
+                        <label for="weight">Weight (kg):</label><br>
+                        <input type="number" name="weight" id="weight" min="50" max="100" step="1" required><br><br>
+                    </div>
+
+                    <!--field for the biography-->
+                    <div class="inputBox">
+                        <label for="bio">Biography:</label><br>
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+
+                    <!--field for other informations-->
+                    <div class="inputBox">
+                        <label for="info">Other Information:</label><br>
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+
+                    <div class="actionButtons">
+                        <!--submit button-->
+                        <div class="inputBoxDiff">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                        <!--reset all form values to its initial values-->
+                        <div class="inputBoxDiff">
+                            <input type="reset" name="" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end of the body -->
+    <script src="js/join-us.js"></script>
+</body>
+
+</html>

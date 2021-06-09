@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="style/gallery.css">
+		<title>Gallery</title>
+	</head>
+	<body onload="initializeSlider()"> <!--this function will be invoked every time the page is loaded-->
+		<div id="hero"> <!--It fills the entire page with the bgImage selected-->
+			<div class="toggle"></div>
+			<nav id="primary-nav"> <!--navigation bar with anchors to the other pages-->
+				<img src="img/logo-for-site.png" class="logo">
+				<img src="img/APE - X.png" class="agency-name">
+				<a href="index.html">Homepage</a>
+				<a href="news-page.html">News Page</a>
+				<a href="join-us.html">Join Us</a>
+				<a href="astronauts.html">Astronauts</a>
+				<a href="missions.html">Missions</a>
+				<a href="gallery.html" style="text-decoration: underline;">Gallery</a>
+				<a href="about.html">About Us</a>
+			</nav>
+			<div class="slider"> <!--This container shows different images which the user can choose with the arrows or clicking on an image-->
+				<img src="img/prev.png" id="prev" /> <!--show the previous image in the slider-->
+				<div class="preview"> <!--the preview always shows only 5 images-->
+					<div class="active pictures" id="img1"></div>
+					<div class="pictures" id="img2"></div>
+					<div class="pictures" id="img3"></div>
+					<div class="pictures" id="img4"></div>
+					<div class="pictures" id="img5"></div>
+					<div class="pictures" id="img6"></div>
+					<div class="pictures" id="img7"></div>
+					<div class="pictures" id="img8"></div>
+					<div class="pictures" id="img9"></div>
+				</div>
+				<img src="img/next.png" id="next"/> <!--show the next image in the slider-->
+			</div>
+		</div>
+		<!-- end of the body -->
+		<script src="js/gallery.js"></script>
+	</body>
+</html>
